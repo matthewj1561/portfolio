@@ -54,6 +54,9 @@ const ContactBody = () => {
         onSubmit={async (e) => {
           e.preventDefault();
           await submit({ name, email, subject, message });
+          toast.success("Email Sent! Thanks for reaching out!", {
+            position: toast.POSITION.TOP_CENTER,
+          });
         }}
       >
         <div className="row ">

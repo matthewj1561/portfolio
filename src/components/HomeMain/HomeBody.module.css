@@ -1,0 +1,21 @@
+.proShot {
+  grid-row: 1/3;
+  grid-column: 2;
+  padding: 20px;
+  width: 100%;
+  filter: grayscale(1);
+  border-radius: 50px;
+  transition: 0.3s ease-out;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.links {
+  grid-column: 1;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}

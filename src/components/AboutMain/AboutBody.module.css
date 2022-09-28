@@ -1,0 +1,15 @@
+.main {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.link {
+  float: left;
+}
+
+hr {
+  color: white;
+}
+
+h1 {
+  margin-right: 10%;
+}

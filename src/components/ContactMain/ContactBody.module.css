@@ -1,0 +1,25 @@
+input,
+textarea {
+  color: black;
+}
+
+.bodyContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.email {
+  background-color: rgb(56, 61, 61);
+  padding: 10px 0 10px 0;
+  margin: 15px;
+  border-radius: 12px;
+}
+
+.emailText {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.link {
+  float: left;
+}

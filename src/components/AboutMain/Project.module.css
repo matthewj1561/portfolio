@@ -1,0 +1,24 @@
+.desc {
+  font-size: 1em;
+}
+
+.title {
+  color: white;
+  font-size: 2em;
+  display: flex;
+}
+
+.skillList {
+  list-style: none;
+}
+
+.skillList li {
+  margin: 10px;
+}
+
+.container {
+  border-style: solid;
+  border-color: white;
+  padding: 10px;
+  margin: 10px;
+}

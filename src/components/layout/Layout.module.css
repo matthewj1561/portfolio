@@ -1,0 +1,19 @@
+html {
+  height: 100%;
+}
+
+body {
+  padding: 50px;
+  font-family: termina, sans-serif;
+  color: var(--text-color);
+  background-color: black;
+  transition: 0.3s ease-out;
+  overflow-x: hidden;
+}
+
+.main {
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  height: 100%;
+}

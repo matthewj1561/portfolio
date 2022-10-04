@@ -27,7 +27,6 @@ const ContactBody = () => {
   return (
     <div>
       <RotateLink text="Home" location="/" />
-
       <h1 className="p-3">Contact me</h1>
       <p>
         I'd love to hear from you! You can fill out this form to contact me, or

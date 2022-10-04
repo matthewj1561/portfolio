@@ -88,7 +88,7 @@ function Edu() {
               </Tab.Pane>
               <Tab.Pane eventKey="#link4">
                 <div className="text-white">
-                  A class that taught me the Big "O" notation, algorithmic
+                  A class that taught me Big "O" notation, algorithmic
                   efficiency, and the value of writing quality code. We
                   programmed in Python.
                 </div>
@@ -97,17 +97,18 @@ function Edu() {
                 <div className="text-white">
                   I've taken two fronted classes for web development. These
                   classes began with requiring students to create static
-                  websites that scale well to all browsers. The second focused
-                  on dynamic web pages that grew automatically.
+                  websites that scale well and adhere to basic web guidlines.
+                  The second focused on dynamic, data-driven websites that grew
+                  automatically.
                 </div>
               </Tab.Pane>
               <Tab.Pane eventKey="#link6">
                 <div className="text-white">
-                  I've take two backend courses in which we learned how to
+                  I've taken two backend courses in which I learned how to
                   store, create, and modify data through web apps. The first
                   course used PHP to simply teach basic concepts. The second
                   course used node, express, and mongodb to create a working
-                  API.
+                  RESTful API.
                 </div>
               </Tab.Pane>
             </Tab.Content>

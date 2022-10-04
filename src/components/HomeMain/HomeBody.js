@@ -1,4 +1,4 @@
-import personalShot from "../../images/Pro_pic_edited.jpg";
+// import personalShot from "images/Pro_pic_edited.jpg";
 import classes from "./HomeBody.module.css";
 import Greeting from "./Greeting";
 import RotateLink from "../links/BoxLink.js";
@@ -24,7 +24,7 @@ function Body() {
         <div className="col-lg-6">
           <img
             className={classes.proShot}
-            src={personalShot}
+            src="/images/Pro_pic_edited.jpg"
             alt="A picture of Matthew James"
           />
         </div>

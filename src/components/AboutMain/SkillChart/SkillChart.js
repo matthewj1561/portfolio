@@ -15,6 +15,7 @@ function SkillChart() {
     "MySQL",
     "PHP",
     "Angular",
+    "C#/.NET",
   ];
 
   const data = {
@@ -24,7 +25,7 @@ function SkillChart() {
         label: "Mastery %",
         backgroundColor: "rgb(255, 99, 132)",
         borderColor: "rgb(25, 67, 207)",
-        data: [75, 60, 55, 65, 45, 30, 35, 30, 25, 100],
+        data: [75, 60, 55, 65, 45, 30, 35, 30, 25, 30, 100],
       },
     ],
   };

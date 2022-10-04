@@ -1,136 +1,78 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.glowOnHover {
+  margin-bottom: 5%;
+  width: 220px;
+  height: 50px;
+  border: solid;
+  border-width: 1px;
+  outline: none;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
 
-.wrapper {
-  padding: 10px;
-}
-a,
-a:visited,
-a:hover,
-a:active {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  position: relative;
-  transition: 0.5s color ease;
-  text-decoration: none;
-  color: #81b3d2;
-  font-size: 2.5em;
-}
-a:hover {
-  color: #d73444;
-}
-a.before:before,
-a.after:after {
+.glowOnHover:before {
   content: "";
-  transition: 0.5s all ease;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
   position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
 }
-a.before:before {
-  top: -0.25em;
+
+.glowOnHover:active {
+  color: #000;
 }
-a.after:after {
-  bottom: -0.25em;
+
+.glowOnHover:active:after {
+  background: transparent;
 }
-a.before:before,
-a.after:after {
-  height: 5px;
-  height: 0.35rem;
-  width: 0;
-  background: #d73444;
+
+.glowOnHover:hover:before {
+  opacity: 1;
 }
-a.first:after {
-  left: 0;
-}
-a.second:after {
-  right: 0;
-}
-a.third:after,
-a.sixth:before,
-a.sixth:after {
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-a.fourth:before,
-a.fourth:after {
-  left: 0;
-}
-a.fifth:before,
-a.fifth:after {
-  right: 0;
-}
-a.seventh:before {
-  right: 0;
-}
-a.seventh:after {
-  left: 0;
-}
-a.eigth:before {
-  left: 0;
-}
-a.eigth:after {
-  right: 0;
-}
-a.before:hover:before,
-a.after:hover:after {
-  width: 100%;
-}
-.square {
-  box-sizing: border-box;
-  margin-left: -0.4em;
-  position: relative;
-  font-size: 1em;
-  overflow: hidden;
-}
-.square a {
-  position: static;
-  font-size: 100%;
-  padding: 0.2em 0.4em;
-}
-.square:before,
-.square:after {
+
+.glowOnHover:after {
+  z-index: -1;
   content: "";
-  box-sizing: border-box;
-  transition: 0.25s all ease;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   position: absolute;
-  width: 5px;
-  width: 0.35rem;
-  height: 0;
-  background: #d73444;
-}
-.square:before {
-  left: 0;
-  bottom: -0.2em;
-}
-.square.individual:before {
-  transition-delay: 0.6s;
-}
-.square:after {
-  right: 0;
-  top: -0.2em;
-}
-.square.individual:after {
-  transition-delay: 0.2s;
-}
-.square a:before {
-  left: 0;
-  transition: 0.25s all ease;
-}
-.square a:after {
-  right: 0;
-  transition: 0.25s all ease;
-}
-.square.individual a:after {
-  transition: 0.25s all ease 0.4s;
-}
-.square:hover:before,
-.square:hover:after {
-  height: calc(100% + 0.4em);
-}
-.square:hover a:before,
-.square:hover a:after {
   width: 100%;
+  height: 100%;
+  background: rgb(17, 17, 17);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }

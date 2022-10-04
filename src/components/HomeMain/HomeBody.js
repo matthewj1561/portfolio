@@ -6,15 +6,18 @@ import RotateLink from "../links/BoxLink.js";
 function Body() {
   return (
     <div className="container">
-      <div className="row">
+      <div className="row mt-5">
         <div className="col-lg-6">
           <Greeting />
-          <div className="row m-5">
+          <div className={`${classes.links} row `}>
             <div className="col-sm-6">
               <RotateLink text="About" location="/aboutMe" />
             </div>
             <div className="col-sm-6">
               <RotateLink text="Contact" location="/contact" />
+            </div>
+            <div className="col-lg-12">
+              <RotateLink text="Bio" location="/bio"></RotateLink>
             </div>
           </div>
         </div>

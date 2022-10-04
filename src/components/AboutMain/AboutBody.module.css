@@ -4,6 +4,7 @@
 
 .link {
   float: left;
+  margin-top: 5%;
 }
 
 hr {
@@ -13,3 +14,10 @@ hr {
 h1 {
   margin-right: 10%;
 }
+
+/* .section {
+  border-style: solid;
+  border-color: white;
+  padding: 2%;
+  border-radius: 10px;
+} */

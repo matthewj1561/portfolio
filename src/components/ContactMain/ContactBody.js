@@ -26,9 +26,8 @@ const ContactBody = () => {
   };
   return (
     <div>
-      <span className={classes.link}>
-        <RotateLink text="Home" location="/" />
-      </span>
+      <RotateLink text="Home" location="/" />
+
       <h1 className="p-3">Contact me</h1>
       <p>
         I'd love to hear from you! You can fill out this form to contact me, or
@@ -102,7 +101,7 @@ const ContactBody = () => {
           />
         </div>
         <button
-          class="btn btn-primary p-3 m-3"
+          className="btn btn-primary p-3 m-3"
           type="submit"
           disabled={submitting}
         >

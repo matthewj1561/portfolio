@@ -1,0 +1,27 @@
+.aSmall {
+  font-size: 16px;
+  transition: 0.3s all;
+}
+
+.aSmall:hover {
+  font-size: 16px;
+  color: rgb(13, 110, 253) !important;
+}
+
+.desc {
+  animation: slide-left 1s ease-out;
+}
+.list-group {
+  margin: 1000px !important;
+}
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateXz(0);
+  }
+}

@@ -4,6 +4,7 @@ import { loadFull } from "tsparticles";
 import HomePage from "./pages/Home";
 import Contact from "./pages/Contact";
 import AboutMe from "./pages/AboutMe";
+import Bio from "./pages/Bio";
 
 import Layout from "./components/layout/Layout";
 import classes from "./App.module.css";
@@ -148,6 +149,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/aboutMe" element={<AboutMe />} />
+          <Route path="/bio" element={<Bio />} />
         </Routes>
       </Layout>
     </div>

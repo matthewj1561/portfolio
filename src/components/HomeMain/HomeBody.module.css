@@ -8,14 +8,10 @@
   transition: 0.3s ease-out;
 }
 
-.mainContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.links {
+  margin-top: 10%;
 }
 
-.links {
-  grid-column: 1;
-  display: flex;
-  justify-content: space-around;
-  padding: 0;
+.container {
+  margin-top: 20% !important;
 }
